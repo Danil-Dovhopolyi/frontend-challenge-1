@@ -1,0 +1,119 @@
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+    --card-bg: hsl(216, 50%, 16%);
+    --bg: hsl(217, 54%, 11%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.page{
+    height: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    align-items: center;
+}
+body{
+    background-color: var(--bg);
+    height: 100vh;
+}
+hr{
+    border-top-style: none;
+    border-bottom-color: hsl(215, 32%, 27%);;
+    margin: 23px 23px 0 23px;
+}
+
+.block{
+    background-color: var(--bg);
+    min-width: 100%;
+    min-height: 100%;
+    height: 1px;
+}
+.card{
+    background-color:var(--card-bg);
+    width: 350px;
+    height: 600px;  
+    border-radius: 15px;
+    
+    &__image{
+        padding: 25px;
+        > img{
+            border-radius: 15px;
+            width: 300px;
+            height: 300px;
+        }
+        
+    }
+    &__name{
+        > p {
+            color: var(--white);
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            padding-left: 25px;
+        }
+    }
+    &__desription{
+        > p{
+            color: var(--soft-blue);
+            font-size: 18px;
+            font-family: 'Lato', sans-serif;
+            padding: 25px 25px 0 25px;
+        }
+    }
+    &__price{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__value{
+        padding: 25px 0 0 25px;
+        display: flex;
+        > p {
+            color: var(--cyan);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            padding: 0 0 0 5px;
+        }
+    }
+    &__time{
+        padding: 25px 25px 0 0;
+        > img{
+            width: 19px;
+            height: 19px;
+        }
+        display: flex;
+        > p {
+            color: var(--soft-blue);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            padding: 0 0 0 5px;
+        }
+    }
+    &__author{
+        display: flex;
+        align-items: center;
+        color: var(--soft-blue);
+        padding: 13px;
+        font-family: 'Lato', sans-serif;
+            > p{
+                padding: 0 0 0 10px;
+                > strong{
+                    color: var(--white);
+                }
+            }
+        
+       > img { 
+        width: 60px;
+        height: 60px;
+        border: 2px solid white;
+        border-radius: 50px;   
+    }
+        
+    }
+}

@@ -1,0 +1,151 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --card-bg: hsl(216, 50%, 16%);
+  --bg: hsl(217, 54%, 11%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background-color: var(--bg);
+  height: 100vh;
+}
+
+hr {
+  border-top-style: none;
+  border-bottom-color: #2f415b;
+  margin: 23px 23px 0 23px;
+}
+
+.block {
+  background-color: var(--bg);
+  min-width: 100%;
+  min-height: 100%;
+  height: 1px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  width: 350px;
+  height: 600px;
+  border-radius: 15px;
+}
+
+.card__image {
+  padding: 25px;
+}
+
+.card__image > img {
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+}
+
+.card__name > p {
+  color: var(--white);
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 25px;
+}
+
+.card__desription > p {
+  color: var(--soft-blue);
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  padding: 25px 25px 0 25px;
+}
+
+.card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__value {
+  padding: 25px 0 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__value > p {
+  color: var(--cyan);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 0 0 0 5px;
+}
+
+.card__time {
+  padding: 25px 25px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__time > img {
+  width: 19px;
+  height: 19px;
+}
+
+.card__time > p {
+  color: var(--soft-blue);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 0 0 0 5px;
+}
+
+.card__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--soft-blue);
+  padding: 13px;
+  font-family: 'Lato', sans-serif;
+}
+
+.card__author > p {
+  padding: 0 0 0 10px;
+}
+
+.card__author > p > strong {
+  color: var(--white);
+}
+
+.card__author > img {
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+/*# sourceMappingURL=style.css.map */
